@@ -1,0 +1,87 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.menu {
+  margin-top: 100px;
+  .main-menu {
+    height: 60px;
+  }
+
+  .menu-item ul {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+  .menu-item {
+    position: relative;
+  }
+  .submenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px;
+    width: 350px;
+    li {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgb(228, 223, 223);
+      height: 50px;
+      box-sizing: border-box;
+      margin-left: 15px;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    .menu-link-list:hover {
+      color: lightblue;
+    }
+  }
+  .menu-item:hover .submenu {
+    display: block;
+  }
+
+  .menu-item:hover ul {
+    display: block;
+  }
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    margin-bottom: 0;
+    align-items: center;
+    height: 60px;
+
+    li {
+      list-style: none;
+    }
+  }
+  .menu-link {
+    height: 60px;
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    font-size: 17px;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+    box-sizing: border-box;
+    padding-top: 18px;
+    &:hover {
+      background-color: rgb(69, 159, 189);
+      color: white;
+    }
+    &::after {
+      font-family: "FontAwesome";
+      content: "\f107";
+      margin-left: 5px;
+    }
+  }
+  .menu-link-list {
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    display: block;
+  }
+}
