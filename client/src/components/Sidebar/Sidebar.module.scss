@@ -1,0 +1,13 @@
+@import "../../utils/variables.scss";
+
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 100px;
+  bottom: 0;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: $dark_1;
+  color: $light_1;
+}
